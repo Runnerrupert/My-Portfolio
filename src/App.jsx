@@ -1,10 +1,22 @@
-import './App.css';
+import Navigation from './components/Navigation.jsx';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className = "portfolio">
-      <Project />
-    </div> 
+    <>
+      <body>
+        <div className="center">
+          <Header />
+          <Navigation />
+        </div>
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </body>
+    </>
   )
 }
 
