@@ -1,8 +1,11 @@
+import Navigation from "./Navigation"
+import "../App.css";
 
 function Header() {
     return (
-        <div>
-            <h1>Runnerrupert</h1>
+        <div className="navbar justify-content-evenly main-background">
+            <h1 className="navbar-text-color">Runnerrupert</h1>
+            <Navigation />
         </div>
     )
 }
