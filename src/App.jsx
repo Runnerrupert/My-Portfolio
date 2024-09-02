@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <body className="container secondary-background">
+      <div className="container secondary-background">
         <div>
           <Header />
         </div>
@@ -17,7 +17,7 @@ function App() {
         <div className="text-center">
           <Footer />
         </div>
-      </body>
+      </div>
     </>
   )
 }

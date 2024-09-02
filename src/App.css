@@ -52,25 +52,56 @@
 
 img {
     display: block;
-    border: 2px solid black;
     height: 500px;
     width: 450px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .portfolioContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .portfolioCard {
-    min-width: 200px;
-    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #3c649f; 
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
     border: 2px solid black;
     margin: 10px;
+}
+
+.portfolioCard:hover {
+    opacity: 80%;
+}
+
+.portfolioBtnCenter {
+    display: flex;
+    margin: 0px auto;
+}
+
+.portfolioBtn {
+    color: white;
+    border: 5px double #e68507;
+    border-radius: 15px;
+    background-color: #e68507;
+}
+
+.portfolioBtn:hover {
+    opacity: 80%;
+}
+
+.portfolioCard h2 {
+    font-size: 25px;
 }
 
 form {
@@ -111,11 +142,10 @@ h2 {
 
 .button {
     color: white;
-    background-color: #3c649f;
 }
 
 .button:hover {
     color: white;
-    background-color: #3c649f;
+    background-color: #FC9E4F;
     opacity: 70%;
 }

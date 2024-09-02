@@ -3,10 +3,14 @@ import "../App.css";
 function Project(props) {
     return (
         <div className="portfolioCard">
-            <h2>{props.title}</h2>
-            <a className="text-center" href={props.link}>
-                <button className="btn button"> Github </button>
-            </a>
+            <div>
+                <h2>{props.title}</h2>
+            </div>
+            <div className="portfolioBtnCenter">
+                <a href={props.link}>
+                    <button className="portfolioBtn"> Github </button>
+                </a>
+            </div>
         </div>
     )
 }

@@ -8,6 +8,7 @@ export default function Portfolio() {
 
     return (
     <>
+        <h2>Projects</h2>
         <div className="portfolioContainer">
             <Project
              title={"README Generator"}
