@@ -1,5 +1,5 @@
 import "../App.css";
-import lilguy from "../assets/images/lilGuy-1.png";
+import lilguy from "../assets/images/lilGuy_1.png";
 
 export default function AboutMe() {
     return (
