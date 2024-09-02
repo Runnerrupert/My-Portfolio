@@ -2,8 +2,12 @@
     color: white;
 }
 
+.footer {
+    background-color: #E68507;
+}
+
 .footer button {
-    background-color: #3c649f;
+    background-color: #FC9E4F;
     font-size: 18px;
     margin: 10px 10px;
 }
@@ -13,13 +17,66 @@
 }
 
 .secondary-background {
-    background-color: #fdefd9;
+    background-color: #D8F5FF;
+}
+
+.about-container {
+    height: 100%;
+    display: flex;
+}
+
+.about-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    border: 2px solid #3c649f;
+    background-color: #6FAADD;
+    max-width: 50%;
+}
+
+.about-content h2 {
+    color: white;
+    background-color: #3c649f;
+}
+
+.about-content p {
+    color: white;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    text-indent: 30px;
+}
+
+img {
+    display: block;
+    border: 2px solid black;
+    height: 500px;
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolioContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolioCard {
+    min-width: 200px;
+    min-height: 200px;
+    border: 2px solid black;
+    margin: 10px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    background-color: #fc9e4f;
+    background-color: #6FAADD;
     width: 25em;
     margin: 50px auto;
     padding: 20px;
@@ -39,11 +96,6 @@ form input {
 h2 {
     margin-top: 25px;
     text-align: center;
-}
-
-p {
-    text-align: center;
-    border: 2px solid black;
 }
 
 .submit {

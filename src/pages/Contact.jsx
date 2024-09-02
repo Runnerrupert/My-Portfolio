@@ -1,6 +1,11 @@
 import "../App.css";
 
+const submitButton = document.getElementById("submit");
+
 export default function Contact() {
+
+
+
     return (
         <>  
             <h2>Contact Me</h2>
@@ -23,7 +28,7 @@ export default function Contact() {
                 <div>
                     <input></input>
                 </div>
-                <button className="m-2 btn submit">Submit</button>
+                <button id="submit" className="m-2 btn submit">Submit</button>
             </form>
         </>
     )
