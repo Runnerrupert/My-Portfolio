@@ -11,22 +11,19 @@ export default function Contact() {
         event.preventDefault();
 
         const validateEmail = (email) => {
-            return String(email)
-              .toLowerCase()
-              .match(
-                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-            );
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
         };
 
         if (!usersName.value || !emailAddress.value || !userMessage.value) {
-            errorMessage.innerHTML = "Please completely fill out the form";
+            errorMessage.innerHTML = "Please completely fill out the form.";
         } else if (!validateEmail(emailAddress.value)) {
-            errorMessage.innerHTML = "Please provide a valid Email Address";
+            errorMessage.innerHTML = "Please provide a valid Email Address.";
         } else {
             usersName.value = "";
             emailAddress.value = "";
             userMessage.value = "";
-            errorMessage.innerHTML = "Message Sent! (jk, this program has no backend..)";
+            errorMessage.innerHTML = "Message Sent! (This program doesn't actually have a backend.";
         }
 
       };

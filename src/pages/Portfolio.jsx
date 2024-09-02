@@ -1,6 +1,8 @@
 import "../App.css";
 import Project from "../components/Project"
 
+import bgImgOne from "../assets/images/Background-image1.jpg";
+
 export default function Portfolio() {
 
 
@@ -13,26 +15,32 @@ export default function Portfolio() {
             <Project
              title={"README Generator"}
              link="https://github.com/Runnerrupert/README-Generator"
+             backgroundImg={bgImgOne}
             />
             <Project
-             title={""}
-             link=""
+             title={"Company Tracker"}
+             link="https://github.com/Runnerrupert/Company-Tracker"
+             backgroundImg={bgImgOne}
+             />
+            <Project
+             title={"ProjectPal"}
+             link="https://github.com/PeruvPowWow/ProjectPAL"
+             backgroundImg={bgImgOne}
             />
             <Project
-             title={""}
-             link=""
+             title={"Vehicle Creator"}
+             link="https://github.com/Runnerrupert/Vehicle-Creator"
+             backgroundImg={bgImgOne}
             />
             <Project
-             title={""}
-             link=""
+             title={"Blog Posts"}
+             link="https://github.com/Runnerrupert/Blog-Posts"
+             backgroundImg={bgImgOne}
             />
             <Project
-             title={""}
-             link=""
-            />
-            <Project
-             title={""}
-             link=""
+             title={"Employee Tracker"}
+             link="https://github.com/Runnerrupert/Employee-Tracker"
+             backgroundImg={bgImgOne}
             />
         </div>
     </>

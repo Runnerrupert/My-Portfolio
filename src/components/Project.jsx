@@ -2,7 +2,7 @@ import "../App.css";
 
 function Project(props) {
     return (
-        <div className="portfolioCard">
+        <div className="portfolioCard" style={{ backgroundImage:`url(${props.backgroundImg})` }}>
             <div>
                 <h2>{props.title}</h2>
             </div>
