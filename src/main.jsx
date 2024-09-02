@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Importing all pages
 import App from './App.jsx';
 import Error from './pages/Error.jsx';
 import AboutMe from './pages/AboutMe.jsx';
@@ -10,6 +11,7 @@ import Contact from './pages/Contact.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Resume from './pages/Resume.jsx';
 
+// Creates how the browser will route to each Page
 const router = createBrowserRouter([
   {
     path: '/',

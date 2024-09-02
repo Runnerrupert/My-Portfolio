@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
 
+// This function is used to create the navigation bar and to set which one is currently active
 function Navigation() {
     const currentPage = useLocation().pathname;
 

@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 import "./App.css";
 
+// The app function creates the header and footer components and displays whichever page is open using "Outlet"
 function App() {
   return (
     <>

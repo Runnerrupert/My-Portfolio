@@ -12,6 +12,10 @@
 
 ---
 
+![Alt text](./src/assets/images/portfolioReadmeImg.PNG)
+
+---
+
 ## Description
 
 This website was created to showcase some of my projects for people to view.
@@ -20,7 +24,7 @@ This website was created to showcase some of my projects for people to view.
 
 ## How to Install
 
-This project does not require installation, just go to the website: [github.com/Runnerrupert/My-Portfolio](https://runnerrupertportfolio.netlify.app)
+This project does not require installation, just go to the website: https://runnerrupertportfolio.netlify.app/ 
 
 ---
 

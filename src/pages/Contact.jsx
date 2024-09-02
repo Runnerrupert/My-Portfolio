@@ -9,14 +9,16 @@ export default function Contact() {
         const userMessage = document.getElementById("message");
         const errorMessage = document.getElementById("errorMessage");
 
+        // Prevents the page from refreshing by default
         event.preventDefault();
 
+        // Function to validate if the email has the characters it requires
         const validateEmail = (email) => {
             const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return re.test(String(email).toLowerCase());
         };
 
-        // Checks if there is anything within the different inputs
+        // Checks if there is anything within the different inputs inserts an errorMessage if there is not
         if (!usersName.value) {
             errorMessage.innerHTML = "Please completely fill out the form.";
         } else if (!validateEmail(emailAddress.value)) {
@@ -24,6 +26,7 @@ export default function Contact() {
         } else if (!userMessage.value) {
             errorMessage.innerHTML = "Please provide a message.";
         } else {
+            // Resets each value to be blank upon submit
             usersName.value = "";
             emailAddress.value = "";
             userMessage.value = "";

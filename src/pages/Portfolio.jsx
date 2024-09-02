@@ -1,6 +1,7 @@
 import "../App.css";
 import Project from "../components/Project"
 
+// Images used inside of each project (Only one currently)
 import Background from "../assets/images/backgroundimg.png";
 
 export default function Portfolio() {
