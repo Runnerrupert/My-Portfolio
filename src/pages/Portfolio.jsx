@@ -1,12 +1,9 @@
 import "../App.css";
 import Project from "../components/Project"
 
-import bgImgOne from "../assets/images/Background-image1.jpg";
+import bgImgOne from "../assets/images/Background-Image1.jpg";
 
 export default function Portfolio() {
-
-
-
 
     return (
     <>

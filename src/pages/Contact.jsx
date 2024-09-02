@@ -15,10 +15,12 @@ export default function Contact() {
             return re.test(String(email).toLowerCase());
         };
 
-        if (!usersName.value || !emailAddress.value || !userMessage.value) {
+        if (!usersName.value) {
             errorMessage.innerHTML = "Please completely fill out the form.";
         } else if (!validateEmail(emailAddress.value)) {
             errorMessage.innerHTML = "Please provide a valid Email Address.";
+        } else if (!userMessage.value) {
+            errorMessage.innerHTML = "Please provide a message.";
         } else {
             usersName.value = "";
             emailAddress.value = "";
