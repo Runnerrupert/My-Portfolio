@@ -2,6 +2,7 @@ import "../App.css";
 
 export default function Contact() {
 
+    // Function to check if everything is filled out and correct upon pressing the submit button
     const handleFormSubmit = (event) => {
         const usersName = document.getElementById("name");
         const emailAddress = document.getElementById("email");
@@ -15,6 +16,7 @@ export default function Contact() {
             return re.test(String(email).toLowerCase());
         };
 
+        // Checks if there is anything within the different inputs
         if (!usersName.value) {
             errorMessage.innerHTML = "Please completely fill out the form.";
         } else if (!validateEmail(emailAddress.value)) {
