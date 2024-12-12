@@ -1,15 +1,17 @@
+import "./Project.css";
+
 function Project(props) {
     return (
-        <div style={{backgroundImage: `url(${props.backgroundImg})`}}>
-            <div>
-                <h2>{props.title}</h2>
+        <a href={props.link} className="project-link">
+            <div className="project-container">
+                <div 
+                    className="project-background" 
+                    style={{backgroundImage: `url(${props.backgroundImg})`}}
+                ></div>
+                <h2 className="project-title">{props.title}</h2>
             </div>
-            <div>
-                <a href={props.link}>
-                    <button> Github </button>
-                </a>
-            </div>
-        </div>
+        </a>
+        
     )
 }
 
