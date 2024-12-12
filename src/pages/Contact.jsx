@@ -1,5 +1,3 @@
-import "../App.css";
-
 export default function Contact() {
 
     // Function to check if everything is filled out and correct upon pressing the submit button
@@ -38,7 +36,7 @@ export default function Contact() {
     return (
         <>  
             <h2>Contact Me</h2>
-            <form className="form">
+            <form>
                 <div>
                     <label>Name:</label>
                 </div>
@@ -57,9 +55,9 @@ export default function Contact() {
                 <div>
                     <input type="text" id="message"></input>
                 </div>
-                <button className="m-2 btn submit" onClick={handleFormSubmit}>Submit</button>
+                <button onClick={handleFormSubmit}>Submit</button>
             </form>
-            <h3 className="text-center m-5 text-danger" id="errorMessage"></h3>
+            <h3 id="errorMessage"></h3>
         </>
     )
 }

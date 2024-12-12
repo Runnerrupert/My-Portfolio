@@ -1,10 +1,12 @@
 import Navigation from "./Navigation"
-import "../App.css";
+import "./Header.css";
 
 function Header() {
     return (
-        <div className="navbar justify-content-evenly main-background">
-            <h1 className="navbar-text-color">Cameron Barfuss</h1>
+        <div className="header-container">
+            <h1 className="header"> Cameron Barfuss | Aspiring Software Engineer </h1>
+            <h1 className="header-mobile"> Cameron Barfuss </h1>
+            <h1 className="header-mobile-2"> Aspiring Software Engineer </h1>
             <Navigation />
         </div>
     )

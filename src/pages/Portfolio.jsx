@@ -1,4 +1,3 @@
-import "../App.css";
 import Project from "../components/Project"
 
 // Images used inside of each project (Only one currently)
@@ -9,7 +8,7 @@ export default function Portfolio() {
     return (
     <>
         <h2>Projects</h2>
-        <div className="portfolioContainer">
+        <div>
             <Project
              title={"README Generator"}
              link="https://github.com/Runnerrupert/README-Generator"

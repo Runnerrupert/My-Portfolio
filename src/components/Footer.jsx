@@ -1,16 +1,16 @@
-import "../App.css";
+import "./Footer.css";
 
 function Footer() {
  return (
     <div className="footer">
         <a href="https://github.com/Runnerrupert">
-            <button  className="btn button">Github</button>
+            Github
         </a>
         <a href="https://www.linkedin.com/in/cameron-barfuss-aa6217235/">
-            <button  className="btn button">LinkedIn</button>
+            LinkedIn
         </a>
         <a href="https://www.reddit.com/user/Runnerrupert/">
-            <button className="btn button">Reddit</button>
+            Reddit
         </a>
     </div>
  )

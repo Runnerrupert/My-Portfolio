@@ -8,16 +8,14 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="container secondary-background">
-        <div>
-          <Header />
-        </div>
+      <div className="main-container">
+        <Header />
         <main>
-          <Outlet />
+          <div>
+            <Outlet />
+          </div>
         </main>
-        <div className="text-center">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   )

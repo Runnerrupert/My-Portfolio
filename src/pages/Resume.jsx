@@ -1,12 +1,12 @@
-import "../App.css";
+import resume from '../assets/resume.txt';
 
 export default function Resume() {
     return (
         <>
-            <div className="text-center m-5">
-                <a href="">Click Here to Download My Resume</a>
+            <div>
+                <a href={resume} download>Click Here to Download My Resume</a>
             </div>
-            <div className="skillSection">
+            <div>
                 <h2>Front-End Proficiencies</h2>
                 <ul>
                     <li className="resumeItem">HTML</li>

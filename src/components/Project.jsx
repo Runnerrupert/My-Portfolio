@@ -1,14 +1,12 @@
-import "../App.css";
-
 function Project(props) {
     return (
-        <div className="portfolioCard" style={{backgroundImage: `url(${props.backgroundImg})`}}>
+        <div style={{backgroundImage: `url(${props.backgroundImg})`}}>
             <div>
                 <h2>{props.title}</h2>
             </div>
-            <div className="portfolioBtnCenter">
+            <div>
                 <a href={props.link}>
-                    <button className="portfolioBtn"> Github </button>
+                    <button> Github </button>
                 </a>
             </div>
         </div>

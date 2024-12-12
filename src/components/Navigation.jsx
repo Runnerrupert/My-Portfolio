@@ -1,42 +1,26 @@
-import { Link, useLocation } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
-// This function is used to create the navigation bar and to set which one is currently active
+import "./Navigation.css";
+
+// Navbar Links between pages
 function Navigation() {
-    const currentPage = useLocation().pathname;
-
   return (
-    <ul className="nav nav-pills">
-      <li className="nav-item link-opacity-50-hover">
-        <Link
-          to="/AboutMe"
-          className={currentPage === '/AboutMe' ? 'nav-link active' : 'nav-link link-light'}
-        >
-          About Me
-        </Link>
+    <ul className="navbar">
+      <li>
+        <NavLink to="/AboutMe" className={({ isActive }) => (isActive ? "active-link" : "")}
+        > About Me </NavLink>
       </li>
-      <li className="nav-item link-opacity-50-hover">
-        <Link
-          to="/Portfolio"
-          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link link-light'}
-        >
-          Portfolio
-        </Link>
+      <li>
+        <NavLink to="/Portfolio" className={({ isActive }) => (isActive ? "active-link" : "")}
+        > Projects </NavLink>
       </li>
-      <li className="nav-item link-opacity-50-hover">
-        <Link
-          to="/Contact"
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link link-light'}
-        >
-          Contact
-        </Link>
+      <li>
+        <NavLink to="/Contact" className={({ isActive }) => (isActive ? "active-link" : "")}
+        > Contact </NavLink>
       </li>
-      <li className="nav-item link-opacity-50-hover">
-        <Link
-          to="/Resume"
-          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link link-light'}
-        >
-          Resume
-        </Link>
+      <li>
+        <NavLink to="/Resume" className={({ isActive }) => (isActive ? "active-link" : "")}
+        > Resume </NavLink>
       </li>
     </ul>
   );
