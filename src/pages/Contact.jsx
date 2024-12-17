@@ -1,3 +1,5 @@
+import "./Contact.css";
+
 export default function Contact() {
 
     // Function to check if everything is filled out and correct upon pressing the submit button
@@ -28,36 +30,33 @@ export default function Contact() {
             usersName.value = "";
             emailAddress.value = "";
             userMessage.value = "";
-            errorMessage.innerHTML = "Message Sent! (This program doesn't actually have a backend.";
+            errorMessage.innerHTML = "Message Sent! (This program doesn't actually have a backend)";
         }
 
       };
 
     return (
         <>  
-            <h2>Contact Me</h2>
-            <form>
-                <div>
-                    <label>Name:</label>
-                </div>
-                <div>
-                    <input type="text" id="name"></input>
-                </div>
-                <div>
-                    <label>Email Address:</label>
-                </div>
-                <div>
-                    <input type="text" id="email"></input>
-                </div>
-                <div>
-                    <label>Message:</label>
-                </div>
-                <div>
-                    <input type="text" id="message"></input>
-                </div>
-                <button onClick={handleFormSubmit}>Submit</button>
-            </form>
-            <h3 id="errorMessage"></h3>
+            <div className="contact-page">
+                
+                <form className="contact-form-container">
+                    <h2 className="contact-title">Contact Me</h2>
+                    <div className="label-text-box">
+                        <label>Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name"></input>
+                    </div>
+                    <div className="label-text-box">
+                        <label>Email Address:</label>
+                        <input type="text" id="email" placeholder="Enter your email"></input>
+                    </div>
+                    <div className="label-text-box">
+                        <label>Message:</label>
+                        <textarea type="text" id="message"></textarea>
+                    </div>
+                    <button onClick={handleFormSubmit} className="submit-button">Submit</button>
+                </form>
+                <h3 id="errorMessage" className="error-message"></h3>
+            </div>
         </>
     )
 }
