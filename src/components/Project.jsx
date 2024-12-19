@@ -2,7 +2,9 @@ import "./Project.css";
 
 function Project(props) {
     return (
-        <a href={props.link} className="project-link">
+        <div>
+            <p className="created-date">{props.createdDate}</p>
+            <a href={props.link} target="_blank" className="project-link">
             <div className="project-container">
                 <div 
                     className="project-background" 
@@ -10,8 +12,8 @@ function Project(props) {
                 ></div>
                 <h2 className="project-title">{props.title}</h2>
             </div>
-        </a>
-        
+            </a>
+        </div>
     )
 }
 

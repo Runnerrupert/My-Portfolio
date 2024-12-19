@@ -1,4 +1,4 @@
-import resume from '../assets/resume.txt';
+import resume from '../assets/Cameron_Barfuss_Resume.pdf';
 import "./Resume.css";
 
 export default function Resume() {

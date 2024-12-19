@@ -38,7 +38,7 @@ export default function Contact() {
     return (
         <>  
             <div className="contact-page">
-                
+                <p className="contact-message">Send me a message using the form below, or email me at cameron.barfuss@gmail.com</p>
                 <form className="contact-form-container">
                     <h2 className="contact-title">Contact Me</h2>
                     <div className="label-text-box">

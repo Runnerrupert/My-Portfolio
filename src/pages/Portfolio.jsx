@@ -18,16 +18,19 @@ export default function Portfolio() {
                 <h2 className="project-h2">Projects</h2>
                 <div className="projects">
                     <Project
+                    createdDate={"July 1, 2024 - July 15, 2024"}
                     title={"ProjectPal"}
                     link="https://github.com/PeruvPowWow/ProjectPAL"
                     backgroundImg={ProjectPalBackground}
                     />
                     <Project
+                    createdDate={"September 14, 2024 - September 24, 2024"}
                     title={"Finance Flow"}
                     link="https://github.com/Runnerrupert/finance-flow"
                     backgroundImg={FinanceFlowBackground}
                     />
                     <Project
+                    createdDate={"November 12, 2024 - November 25, 2024"}
                     title={"JobHub"}
                     link="https://github.com/Runnerrupert/JobHub"
                     backgroundImg={JobhubBackground}

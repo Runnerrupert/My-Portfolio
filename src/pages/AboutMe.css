@@ -15,8 +15,10 @@
 }
 
 .aboutme-left-container img {
-    width: 180px;
-    height: 280px;
+    width: 370px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid #FFE6C0;
 }
 
 .aboutme-right-container {
@@ -34,6 +36,7 @@
     background-color: #1E2A47; 
     color: #F0F0F0; 
     padding: 20px; 
+    border: 2px solid #5BA7C3;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     max-width: 800px; 
@@ -57,7 +60,7 @@
     line-height: 1.6;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
     .aboutme-container {
         flex-direction: column;
         width: 100%;
@@ -70,11 +73,13 @@
     }
 
     .aboutme-left-container img {
-        padding: 10px;
+        margin-top: 20px;
+        width: 300px;
+        height: 400px;
     }
 
     .aboutme-right-container {
-        width: 100%;
+        width: 95%;
         padding: 0px;
     }
     
