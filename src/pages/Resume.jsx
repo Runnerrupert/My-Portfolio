@@ -27,7 +27,7 @@ export default function Resume() {
                             <li className="resumeItem">MongoDB</li>
                             <li className="resumeItem">JWT Tokens</li>
                             <li className="resumeItem">Bcrypt</li>
-                            <li className="resumeItem">GraphQl</li>
+                            <li className="resumeItem">GraphQL</li>
                         </ul>
                     </div>
                     <div className="proficiency-container">
